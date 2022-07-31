@@ -1,6 +1,8 @@
 import React from 'react';
 
-const Toolbar: React.FunctionComponent<{ title: string }> = ({ title }) => {
+import type { ToolbarComponent } from 'alpha-shared';
+
+const Toolbar: ToolbarComponent = ({ title }) => {
    return <header className='mt-1'>
       <h1>{ title }</h1>
    </header>
